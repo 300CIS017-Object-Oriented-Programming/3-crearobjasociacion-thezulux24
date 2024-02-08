@@ -15,9 +15,14 @@ private:
 public:
     Propietario() = default; //Agrega constructor por defecto sin cuerpo
     Propietario(std::string nombre, std::string docIdentidad);
+    Propietario(std::string docIdentidad);
     void mostrarInfo();
     std::string getNombre();
+    std::string getDoc();
     void setNombre(std::string nombre);
+    void setDoc(std::string docIdentidad);
+    void setEdad(int edad);
+
 
 
 

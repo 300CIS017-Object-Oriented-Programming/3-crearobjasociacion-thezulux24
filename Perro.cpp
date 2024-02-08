@@ -13,6 +13,9 @@ Perro::Perro() {
     this->color = "";
 }
 
+Perro::Perro(std::string _nombre, int _edad, std::string _raza,std::string _color, std::string _tamanio)
+        : nombre(_nombre), edad(_edad), raza(_raza), color(_color), tamanio(_tamanio) {}
+
 void Perro::ladrar() {
     std::cout << "Guau Guau" << std::endl;
 }
