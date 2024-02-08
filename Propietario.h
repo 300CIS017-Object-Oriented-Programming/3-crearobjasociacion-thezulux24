@@ -18,6 +18,7 @@ public:
     Propietario(std::string docIdentidad);
     void mostrarInfo();
     std::string getNombre();
+    int getEdad();
     std::string getDoc();
     void setNombre(std::string nombre);
     void setDoc(std::string docIdentidad);

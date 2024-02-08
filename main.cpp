@@ -23,7 +23,15 @@ int main() {
 
     Propietario* david = new Propietario ("6677");
     david->setNombre ("David");
-    david->setEdad(12);
+    david->setEdad(2);
     david->mostrarInfo();
+
+    lion->agregarPropietario("Brayan Zuluaga", "1087112028");
+    std::cout<< "El nombre del pPropietario del perro "<<lion->getNombre() << " es " << lion->getPropietario()->getNombre()<<std::endl;
+
+    std::cout<< lion->getPropietario()->getDoc() <<std::endl;
+    lion->getPropietario()->setEdad(19);
+    std::cout<< lion->getPropietario()->getEdad() <<std::endl;
+
     return 0;
 }

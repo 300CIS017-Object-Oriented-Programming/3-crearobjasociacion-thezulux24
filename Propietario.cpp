@@ -21,6 +21,9 @@ std::string Propietario::getNombre()  {
 std::string Propietario::getDoc()  {
     return docIdentidad;
 }
+int Propietario::getEdad()  {
+    return edad;
+}
 
 void Propietario::setNombre(std::string nombre) {
     this->nombre = nombre;

@@ -24,7 +24,7 @@ public:
     void ladrar();
     Propietario * getPropietario();
 
-    // Sirve para.......
+    // Sirve para....... AL PUNTERO QUE ESTÁ CREADO DE PROPIETARIO SE ASOCIA CREANDO UN NUEVO OBJETO PROPIETARIO
     void agregarPropietario(std::string nombre, std::string docIdentidad);
 
     // Sirve para relacionar dos clases cuando ya se tiene un objeto
