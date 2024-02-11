@@ -1,7 +1,7 @@
 #include <iostream>
 #include "Perro.h"
 #include "Propietario.h"
-
+#include "veterinario.h"
 int main() {
 
     // Instanciar
@@ -27,11 +27,21 @@ int main() {
     david->mostrarInfo();
 
     lion->agregarPropietario("Brayan Zuluaga", "1087112028");
-    std::cout<< "El nombre del pPropietario del perro "<<lion->getNombre() << " es " << lion->getPropietario()->getNombre()<<std::endl;
+    std::cout << "El nombre del pPropietario del perro "<<lion->getNombre() << " es " << lion->getPropietario()->getNombre()<<std::endl;
 
-    std::cout<< lion->getPropietario()->getDoc() <<std::endl;
+    std::cout << lion->getPropietario()->getDoc() <<std::endl;
     lion->getPropietario()->setEdad(19);
-    std::cout<< lion->getPropietario()->getEdad() <<std::endl;
+    std::cout << lion->getPropietario()->getEdad() <<std::endl;
+
+    std::cout << "####################" << std::endl << "PRUEBAS PARTE 2:" << std::endl << "####################" << std::endl;
+
+    Veterinario* lucas = new Veterinario("lucas",20);
+
+    lion->setVeterinario(lucas);
+
+    std::cout << "El nombre del veterinario es " << lion->getVeterinario()->getNombre()<< " y tiene " << lion->getVeterinario()->getAniosExperiencia() << " anios de experiencia" << std::endl;
+
+
 
     return 0;
 }

@@ -24,7 +24,7 @@ public:
     void setDoc(std::string docIdentidad);
     void setEdad(int edad);
 
-
+    
 
 
 };
