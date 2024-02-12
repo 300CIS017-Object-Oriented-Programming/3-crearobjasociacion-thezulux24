@@ -33,13 +33,18 @@ void Perro::setPropietario(Propietario *pPropietario) {
 void Perro::setVeterinario(Veterinario *pVeterinario){
     this->pVeterinario = pVeterinario;
 }
+void Perro::setRaza(Raza *pRaza){
+    this->pRaza = pRaza;
+}
 Propietario *Perro::getPropietario() {
     return this->pPropietario;
 }
 Veterinario *Perro::getVeterinario(){
     return this->pVeterinario;
 }
-
+Raza *Perro::getpRaza(){
+    return this->pRaza;
+}
 int Perro::getEdad() {
     return edad;
 }

@@ -2,6 +2,7 @@
 #include "Perro.h"
 #include "Propietario.h"
 #include "veterinario.h"
+#include "raza.h"
 int main() {
 
     // Instanciar
@@ -41,7 +42,14 @@ int main() {
 
     std::cout << "El nombre del veterinario es " << lion->getVeterinario()->getNombre()<< " y tiene " << lion->getVeterinario()->getAniosExperiencia() << " anios de experiencia" << std::endl;
 
+    Raza* mastin = new Raza("Mastin Napolitano", "Italia");
 
+    Raza* maltes = new Raza("Maltes", "Italia");
 
+    firulais.setRaza(mastin);
+
+    std::cout << "la raza de " <<firulais.getNombre() << " es " << firulais.getpRaza()->getNombre() << " y su pais de origen es " << firulais.getpRaza()->getPaisOrigen() << std::endl;
+
+    
     return 0;
 }
